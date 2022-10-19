@@ -34,7 +34,7 @@ public class PaymentsService {
         emailService.sendEmail();
     }
 
-    public void validatePaymentKey() {
+    public void pixValidator() {
 
     }
 
