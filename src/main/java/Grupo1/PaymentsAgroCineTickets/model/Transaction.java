@@ -27,13 +27,13 @@ public class Transaction {
     public Transaction(CardRequest cardRequest) {
         this.userId = cardRequest.getUserId();
         this.price = cardRequest.getPrice();
-//        this.paymentType = Enum.Card
+        this.paymentType = PaymentType.CARD;
     }
 
     public Transaction(PixRequest pixRequest){
         this.userId = pixRequest.getUserId();
         this.price = pixRequest.getPrice();
-//        this.paymentType = Enum.Pix;
+        this.paymentType = PaymentType.PIX;
     }
 
     public Transaction() {
