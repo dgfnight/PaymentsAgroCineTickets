@@ -27,7 +27,7 @@ public class PaymentsService {
     }
 
     public void pixPayment(PixRequest pixRequest) {
-        validatePaymentKey();
+        pixValidator();
         generatePaymentVoucher();
         pointsProgramService.generatePoints();
 

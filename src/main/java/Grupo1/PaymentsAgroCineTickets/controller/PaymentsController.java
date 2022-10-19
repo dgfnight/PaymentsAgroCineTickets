@@ -20,7 +20,8 @@ public class PaymentsController {
     @PostMapping("/card")
     public ResponseEntity<?> cardPayment(@RequestBody @Valid CardRequest cardRequest) {
         paymentsService.cardPayment(cardRequest);
-        return ResponseEntity.ok().body();
+//        return ResponseEntity.ok().body();
+        return null;
     }
 
     @PostMapping("/pix")

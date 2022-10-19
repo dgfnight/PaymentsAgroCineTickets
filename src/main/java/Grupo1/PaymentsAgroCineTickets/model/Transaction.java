@@ -2,7 +2,7 @@ package Grupo1.PaymentsAgroCineTickets.model;
 
 import Grupo1.PaymentsAgroCineTickets.dto.request.CardRequest;
 import Grupo1.PaymentsAgroCineTickets.dto.request.PixRequest;
-import lombok.Data;
+import Grupo1.PaymentsAgroCineTickets.enums.PaymentType;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.Entity;
@@ -34,6 +34,10 @@ public class Transaction {
         this.userId = pixRequest.getUserId();
         this.price = pixRequest.getPrice();
 //        this.paymentType = Enum.Pix;
+    }
+
+    public Transaction() {
+
     }
 
 }
