@@ -3,6 +3,10 @@ package Grupo1.PaymentsAgroCineTickets.model;
 import Grupo1.PaymentsAgroCineTickets.dto.request.CardRequest;
 import Grupo1.PaymentsAgroCineTickets.dto.request.PixRequest;
 import Grupo1.PaymentsAgroCineTickets.enums.PaymentType;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.Entity;
@@ -12,7 +16,9 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 @Entity
-
+@Getter
+@Setter
+@AllArgsConstructor
 public class Transaction {
 
     @Id
